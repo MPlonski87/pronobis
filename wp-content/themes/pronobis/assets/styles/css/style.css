@@ -1,3 +1,9 @@
+/*   
+	Theme Name: Pronobis
+	Description: Pronobis Demenzbetreuung
+	Author: Michael Plonski
+	Author URI: https://www.michaelplonski.de
+*/
 body, form {
   margin: 0;
   padding: 0; }
@@ -11,5 +17,5 @@ a:hover {
 .test {
   color: orange; }
 
-h1 {
-  color: red; }
+.block__element {
+  color: orange; }

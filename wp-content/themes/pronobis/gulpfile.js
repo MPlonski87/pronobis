@@ -3,12 +3,12 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function() {
-  return gulp.src('assets/styles/scss/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('assets/styles/css/'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
+    return gulp.src('assets/styles/scss/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('assets/styles/css/'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
 gulp.task('browserSync', function() {
@@ -17,12 +17,12 @@ gulp.task('browserSync', function() {
     });
 });
 
-gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('assets/styles/scss/*.scss', ['sass']);
-  gulp.watch('assets/styles/scss/*.js', browserSync.reload); 
-  gulp.watch('*.*', browserSync.reload); 
+gulp.task('watch', ['browserSync', 'sass'], function() {
+    gulp.watch('assets/styles/scss/*.scss', ['sass']);
+    gulp.watch('assets/styles/scss/*.js', browserSync.reload);
+    gulp.watch('*.*', browserSync.reload);
 });
 
-gulp.task('build', function(){
-	// build
+gulp.task('build', function() {
+    // build
 });
