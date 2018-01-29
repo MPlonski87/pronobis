@@ -22,6 +22,9 @@
 				<div class="col-xs-12 col-md-3">Column 3</div>
 				<div class="col-xs-12 col-md-3">Column 4</div>
 			</div>
+
+			<h3><?php the_field('test'); ?></h3>
+
 		</main>
 
 		<footer></footer>

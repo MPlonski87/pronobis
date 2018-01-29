@@ -40,12 +40,12 @@ define('DB_USER', 'root');
 /**
  * Ersetze passwort_hier_einfuegen mit deinem MySQL-Passwort.
  */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 
 /**
  * Ersetze localhost mit der MySQL-Serveradresse.
  */
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'localhost');
 
 /**
  * Der Datenbankzeichensatz, der beim Erstellen der

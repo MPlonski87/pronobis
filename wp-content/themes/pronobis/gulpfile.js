@@ -13,7 +13,7 @@ gulp.task('sass', function() {
 
 gulp.task('browserSync', function() {
     browserSync.init({
-        proxy: "http://localhost:8888/pronobis/"
+        proxy: "http://localhost/dev/pronobis/"
     });
 });
 
