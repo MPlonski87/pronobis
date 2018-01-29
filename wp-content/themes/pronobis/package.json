@@ -1,0 +1,14 @@
+{
+  "name": "pronobis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "browser-sync start --proxy 'http://localhost:8888/pronobis/' --files '*.*'"
+  },
+  "author": "Michael Plonski",
+  "license": "ISC",
+  "devDependencies": {
+    "browsersync": "0.0.1-security"
+  }
+}
