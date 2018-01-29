@@ -11,17 +11,25 @@
 @import 'state';
 @import 'theme';
 
+$secondary-light: #d3d4d5;
+$secondary-dark: #3a2625;
+
 @font-face {
     font-family: 'Meta';
     src: url('../../fonts/MetaOT-Norm.otf') format('truetype');
 }
 
-$secondary-light: #d3d4d5;
-$secondary-dark: #3a2625;
-
-
 * {
     font-family: 'Meta';
+}
+
+.navigation {
+    &__item {
+        background-color: $secondary-dark;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 
 footer {
