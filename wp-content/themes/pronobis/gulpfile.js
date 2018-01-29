@@ -1,9 +1,8 @@
-var gulp = require('gulp');
-var browserSync = require('browserSync');
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
 
-// watch
 gulp.task('watch', function() {
     browserSync.init({
-        proxy: "browser-sync start --proxy 'http://localhost:8888/pronobis/' --files '*.*'"
+        proxy: "http://localhost:3000/pronobis/"
     });
 });
