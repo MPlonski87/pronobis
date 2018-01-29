@@ -1,6 +1,7 @@
 # Pronobis
 
 ## Features
+- animate.css, flexboxgrid, smacss folder structure, bem css templating
 - watch project including livereload with browsersynch and sass to css compiling
 - build project with minification, concatenation, uglyification, ...
 
