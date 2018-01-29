@@ -19,3 +19,5 @@ a:hover {
 
 .block__element {
   color: orange; }
+  .block__element--modifier {
+    border: 1px red solid; }

@@ -14,5 +14,9 @@
 .block {
     &__element {
         color: orange;
+
+        &--modifier {
+            border: 1px red solid;
+        }
     }
 }
