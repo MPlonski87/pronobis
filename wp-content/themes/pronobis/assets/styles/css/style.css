@@ -1,23 +1,22 @@
 /*   
-	Theme Name: Pronobis
-	Description: Pronobis Demenzbetreuung
-	Author: Michael Plonski
-	Author URI: https://www.michaelplonski.de
+    Theme Name: Pronobis
+    Description: Pronobis Demenzbetreuung
+    Author: Michael Plonski
+    Author URI: https://www.michaelplonski.de
 */
-body, form {
+body {
   margin: 0;
   padding: 0; }
 
-a {
-  color: #039; }
+@font-face {
+  font-family: 'Meta';
+  src: url("../../fonts/MetaOT-Norm.otf") format("truetype"); }
 
-a:hover {
-  color: #03F; }
+* {
+  font-family: 'Meta'; }
 
-.test {
-  color: orange; }
-
-.block__element {
-  color: orange; }
-  .block__element--modifier {
-    border: 1px red solid; }
+footer {
+  min-height: 80px;
+  background-color: #d3d4d5;
+  color: #3a2625;
+  font-size: 25px; }

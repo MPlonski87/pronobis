@@ -14,19 +14,27 @@
 		<header></header>
 		
 		<main>
-			<div class="block__element--modifier animated fadeIn">Lorem ipsum dolor sit amet.</div>
-
-			<div class="row">
-				<div class="col-xs-12 col-md-3">Column 1</div>
-				<div class="col-xs-12 col-md-3">Column 2</div>
-				<div class="col-xs-12 col-md-3">Column 3</div>
-				<div class="col-xs-12 col-md-3">Column 4</div>
-			</div>
-
 			<h3><?php the_field('test'); ?></h3>
 
+			<div class="row animated fadeIn">
+				<div class="col-xs-12 col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde asperiores laboriosam modi obcaecati recusandae eligendi hic, sunt voluptates natus, dolore illum perspiciatis maiores minima iste animi autem optio quasi ea! Error nostrum culpa dicta ullam cum aut quaerat? Cum, molestias.</div>
+				<div class="col-xs-13 col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eaque fugiat deleniti ab optio ipsam recusandae impedit voluptas consequuntur. Molestias perferendis sint labore deserunt facilis eum obcaecati accusamus suscipit nemo.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vel similique, sint ratione placeat, iure iste, impedit fugiat quasi laborum dolor! Nostrum, reiciendis!Lorem ipsum dolor sit amet.</div>
+				<div class="col-xs-13 col-md-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, mollitia?Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+				<div class="col-xs-13 col-md-3">Lorem ipsum dolor sit amet.</div>
+			</div>
 		</main>
 
-		<footer></footer>
+		<footer>
+			<div class="row">
+				<div class="col-xs-12 col-md-2 col-md-offset-1">
+					<p>Rufen Sie mich an:</p>
+					<p><a href="tel:0201409811">Telefon: 0201.409811</a></p>
+				</div>
+				<div class="col-xs-12 col-md-8">
+					<p>pronobis Demenzbetreuung Dorothee Hammer ist ein von der Bezirksregierung Düsseldorf anerkanntes ambulantes Betreuungsangebot für Seniorinnen und Senioren mit und ohne eingeschränkter Alltagskompetenz.</p>
+				</div>
+			</div>
+		</footer>
+
 	</body>
 </html>
