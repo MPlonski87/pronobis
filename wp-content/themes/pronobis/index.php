@@ -23,6 +23,7 @@
          <p align="center"><?php next_posts_link('&laquo; &Auml;ltere Eintr&auml;ge') ?> | <?php previous_posts_link('Neuere Eintr&auml;ge &raquo;') ?></p>
       <?php endif; ?>
 
+		<h2><?php the_field('test'); ?></h2>
    </div><!-- main -->
     
    <div id="sidebar"></div><!-- sidebar -->  
