@@ -24,5 +24,5 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
 });
 
 gulp.task('build', function(){
-	//
+	// build
 });
