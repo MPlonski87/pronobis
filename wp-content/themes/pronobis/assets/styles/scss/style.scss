@@ -1,5 +1,9 @@
-div {
-	h1 {
-		color: orange;
-	}
+@import 'base';
+@import 'layout';
+@import 'module';
+@import 'state';
+@import 'theme';
+
+h1 {
+	color: red;
 }
