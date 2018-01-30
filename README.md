@@ -1,7 +1,7 @@
-# Pronobis
+# Pronobis Demenzbetreuung wordpress theme
 
 ## Description
-Pronobis Wordpress Theme
+A wordpress theme developed as a project for my bachelor thesis.
 
 ## Features
 - animate.css, flexboxgrid, smacss folder structure, bem css templating
