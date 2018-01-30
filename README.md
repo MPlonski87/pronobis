@@ -1,4 +1,4 @@
-# Pronobis Demenzbetreuung wordpress theme
+# Pronobis Demenzbetreuung Wordpress Theme
 
 ## Description
 A wordpress theme developed as a project for my bachelor thesis in computer sciences.
