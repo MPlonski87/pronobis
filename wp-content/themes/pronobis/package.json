@@ -1,7 +1,7 @@
 {
   "name": "pronobis",
   "version": "1.0.0",
-  "description": "",
+  "description": "A wordpress theme developed as a project for my bachelor thesis in computer sciences.",
   "main": "index.js",
   "scripts": {
     "watch": "gulp watch",
