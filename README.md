@@ -5,7 +5,7 @@ Pronobis Wordpress Theme
 
 ## Features
 - animate.css, flexboxgrid, smacss folder structure, bem css templating
-- watch project including livereload with browsersynch and sass to css compiling
+- watch project including livereload with browsersynch and sass to css compiling via gulp
 - build project with minification, concatenation, uglyification, ...
 
 ## Requirements
