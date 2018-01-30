@@ -18,4 +18,4 @@ Pronobis Wordpress Theme
   <code>$ npm run watch</code> OR <code>$ npm run build</code>
 </pre>
 
-Don't forget to edit localhost path in gulpfile.js
+(Don't forget to edit localhost path in gulpfile.js)
