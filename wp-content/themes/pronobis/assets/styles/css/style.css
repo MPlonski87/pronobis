@@ -15,6 +15,10 @@ body {
 * {
   font-family: 'Meta'; }
 
+.header-image img {
+  height: 100%;
+  width: 100%; }
+
 .navigation__item {
   background-color: #3a2625;
   color: white;

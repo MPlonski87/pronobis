@@ -23,6 +23,13 @@ $secondary-dark: #3a2625;
     font-family: 'Meta';
 }
 
+.header-image {
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
 .navigation {
     &__item {
         background-color: $secondary-dark;
