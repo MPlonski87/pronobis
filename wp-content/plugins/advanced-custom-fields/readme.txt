@@ -2,7 +2,7 @@
 Contributors: elliotcondon
 Tags: acf, advanced, custom, field, fields, form, repeater, content
 Requires at least: 3.6.0
-Tested up to: 4.9.0
+Tested up to: 4.9.9
 Stable tag: 4.4.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,6 +18,12 @@ Use the Advanced Custom Fields plugin to take full control of your WordPress edi
 **Add them anywhere.** Fields can be added all over WP including posts, users, taxonomy terms, media, comments and even custom options pages!
 
 **Show them everywhere.** Load and display your custom field values in any theme template file with our hassle free developer friendly functions!
+
+= Version 5 Early Access =
+
+Advanced Custom Fields version 5 is scheduled for release in mid 2018. This major update introduces new fields, new locations and new features!
+
+To help provide the most seamless update possible, we have included a simple **Early Access** opt-in feature to enable the update now. [Learn more](https://www.advancedcustomfields.com/resources/upgrade-guide-version-5/)
 
 = Features =
 * Simple & Intuitive

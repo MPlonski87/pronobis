@@ -1,32 +1,27 @@
-/*   
-    Theme Name: Pronobis
-    Description: Pronobis Demenzbetreuung
-    Author: Michael Plonski
-    Author URI: https://www.michaelplonski.de
-*/
-body {
-  margin: 0;
-  padding: 0; }
+/* @font-face {
+  font-family: 'SharpSansDispNo2';
+  src: url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-Medium.eot');
+  src: url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-Medium.woff') format('woff'),
+  url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 
 @font-face {
-  font-family: 'Meta';
-  src: url("../../fonts/MetaOT-Norm.otf") format("truetype"); }
-
-* {
-  font-family: 'Meta'; }
-
-.header-image img {
-  height: 100%;
-  width: 100%; }
-
-.navigation__item {
-  background-color: #3a2625;
-  color: white;
-  text-align: center;
-  text-transform: uppercase; }
-
-footer {
-  min-height: 80px;
-  background-color: #d3d4d5;
-  color: #3a2625;
-  font-size: 25px; }
+  font-family: 'SharpSansDispNo2';
+  src: url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-MediumObl.eot');
+  src: url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-MediumObl.eot?#iefix') format('embedded-opentype'),
+  url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-MediumObl.woff') format('woff'),
+  url('../vendor/fonts/SharpSansDisplayNo2-Medium/SharpSansDispNo2-MediumObl.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+} */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+p {
+  font-family: 'Fira Sans';
+  color: #c5171c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.5rem;
+  font-weight: regular; }

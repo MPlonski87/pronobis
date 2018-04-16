@@ -1,47 +1,9 @@
-/*   
-    Theme Name: Pronobis
-    Description: Pronobis Demenzbetreuung
-    Author: Michael Plonski
-    Author URI: https://www.michaelplonski.de
-*/
+// common
+@import 'common/base';
+@import 'common/typography';
+@import 'common/functions';
+@import 'common/mixins';
+@import 'common/variables';
 
-@import 'base';
-@import 'layout';
-@import 'module';
-@import 'state';
-@import 'theme';
-
-$secondary-light: #d3d4d5;
-$secondary-dark: #3a2625;
-
-@font-face {
-    font-family: 'Meta';
-    src: url('../../fonts/MetaOT-Norm.otf') format('truetype');
-}
-
-* {
-    font-family: 'Meta';
-}
-
-.header-image {
-    img {
-        height: 100%;
-        width: 100%;
-    }
-}
-
-.navigation {
-    &__item {
-        background-color: $secondary-dark;
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-    }
-}
-
-footer {
-    min-height: 80px;
-    background-color: $secondary-light;
-    color: $secondary-dark;
-    font-size: 25px;
-}
+// components
+@import 'components/partial';

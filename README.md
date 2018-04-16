@@ -4,7 +4,7 @@
 A wordpress theme developed as a project for my bachelor thesis in computer sciences.
 
 ## Features
-- animate.css, flexboxgrid, smacss folder structure, bem css templating
+- animate.css, flexboxgrid.css, normalize.css
 - watch project including livereload with browsersynch and sass to css compiling via gulp
 - build project with minification, concatenation, uglyification, ...
 
@@ -18,4 +18,5 @@ A wordpress theme developed as a project for my bachelor thesis in computer scie
   <code>$ npm run watch</code> OR <code>$ npm run build</code>
 </pre>
 
-(Don't forget to edit localhost path in gulpfile.js)
+## Note
+Don't forget to edit localhost path in gulpfile.js and to set wordpress database configuration properly
