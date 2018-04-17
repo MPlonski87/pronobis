@@ -1,9 +1,18 @@
+// overrides
+@import 'overrides/flexboxgrid';
+
 // common
-@import 'common/base';
-@import 'common/typography';
-@import 'common/functions';
 @import 'common/mixins';
+@import 'common/functions';
 @import 'common/variables';
+@import 'common/typography';
+@import 'common/base';
 
 // components
-@import 'components/partial';
+@import 'components/main-navigation.scss';
+@import 'components/site-navigation.scss';
+@import 'components/infobox.scss';
+@import 'components/hero-image.scss';
+@import 'components/main-content.scss';
+@import 'components/footer';
+@import 'components/error';
