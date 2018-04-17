@@ -1,0 +1,39 @@
+.main-content {
+  margin: $margin-top-bottom 0;
+
+  a {
+    color: $secondary-dark;
+    font-weight: 400;
+  }
+
+  h1 {
+    position: relative;
+    margin: 0;
+    top: rem(-14);
+  }
+
+  h3 {
+    margin-bottom: rem(20);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-left: rem(10);
+    padding-right: rem(10);
+  }
+
+  .row {
+    position: relative;
+    top: rem(-30);
+  }
+
+  p {
+    margin: 0;
+    padding-left: rem(10);
+    padding-right: rem(10);
+  }
+}

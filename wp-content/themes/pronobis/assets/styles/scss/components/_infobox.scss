@@ -1,0 +1,20 @@
+.infobox {
+  background-color: $primary;
+  left: rem(-5);
+  padding: rem(5) 0;
+  position: relative;
+  top: rem(-67);
+  width: 102.5%;
+
+  ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+
+    li {
+      color: $white;
+      font-size: rem(24);
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.site-navigation {
+  div {
+    ul {
+      display: flex;
+      padding: 0;
+      width: 100%;
+
+      li {
+        background-color: $secondary-dark;
+        border: rem(3) $white solid;
+        list-style-type: none;
+        padding-bottom: rem(10);
+        padding-top: rem(10);
+        text-align: center;
+        flex-basis: 25%;
+        max-width: 25%;
+
+        a {
+          position: relative;
+          color: $white;
+          font-size: rem(38);
+          font-weight: 400;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover,
+          &:focus {
+            opacity: 1;
+            color: $white;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $primary;
+        }
+
+        .sub-menu {
+          border: 3px green solid;
+          display: flex;
+          flex-direction: column;
+
+          li {
+            border: none;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  .current-menu-item {
+    background-color: $primary;
+  }
+}

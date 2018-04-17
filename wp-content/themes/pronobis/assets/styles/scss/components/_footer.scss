@@ -1,0 +1,20 @@
+.footer {
+  background-color: $secondary;
+
+  &__contact {
+    font-size: rem(48);
+    position: relative;
+    text-align: right;
+    top: rem(-10);
+  }
+
+  &__note {
+    font-size: rem(19);
+  }
+
+  &__link {
+    color: $primary;
+    font-size: rem(19);
+    font-weight: 400;
+  }
+}

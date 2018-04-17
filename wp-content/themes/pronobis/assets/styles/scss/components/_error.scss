@@ -1,0 +1,12 @@
+.error {
+  &__note {
+    border: rem(1) $primary solid;
+    margin: $margin-side;
+    padding: rem(50);
+
+    a {
+      color: $primary;
+      font-weight: 400;
+    }
+  }
+}
