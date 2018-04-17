@@ -8,4 +8,11 @@
 		wp_enqueue_style('style', get_template_directory_uri() . '/assets/styles/css/style.css');
 	}
 	add_action( 'wp_enqueue_scripts', 'add_styles'); 
+
+	// load menu
+	function register_menu() {
+	  register_nav_menu('header-menu',__( 'Header Menu' ));
+	}
+	add_action( 'init', 'register_menu' );	
+	
 ?>

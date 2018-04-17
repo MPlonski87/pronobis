@@ -1,21 +1,10 @@
 <?php get_header(); ?>
+	    <div class="hero-image animated fadeIn">
+	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/startseite/hero-intro.jpg'; ?>" alt="Vorschaubild Startseite">
+	    </div>
 
-	<main>
-        <h1>Test</h1>
-    	<div class="row animated fadeIn">
-            <div class="col-xs-12 col-md-3">
-            	lorem 11112234
-            </div>
-            <div class="col-xs-12 col-md-3">
-            	lorem 2
-            </div>
-            <div class="col-xs-12 col-md-3">
-            	lorem 3
-            </div>
-            <div class="col-xs-12 col-md-3">
-            	lorem 4
-            </div>                                              
-        </div>
-	</main>
+		<?php include (get_template_directory() . '/components/site-navigation.php'); ?>	    
+	</header>
 
+	<?php include (get_template_directory() . '/components/main-content.php'); ?>
 <?php get_footer(); ?>
