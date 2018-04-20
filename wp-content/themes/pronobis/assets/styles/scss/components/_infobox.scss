@@ -1,10 +1,20 @@
 .infobox {
   background-color: $primary;
+  display: none;
   left: rem(-5);
   padding: rem(5) 0;
   position: relative;
   top: rem(-67);
-  width: 102.5%;
+  width: 104%;
+
+  @include min-lg-breakpoint {
+    display: block;
+    width: 103%;
+  }
+
+  @include min-lg-2-breakpoint {
+    width: 102.2%;
+  }
 
   ul {
     list-style-type: none;
@@ -13,7 +23,10 @@
 
     li {
       color: $white;
-      font-size: rem(24);
+      font-size: rem(18);
+      @include min-lg-2-breakpoint {
+        font-size: rem(24);
+      }
       text-transform: uppercase;
     }
   }

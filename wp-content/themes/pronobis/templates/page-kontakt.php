@@ -6,7 +6,7 @@
 		<?php include (get_template_directory() . '/components/site-navigation.php'); ?>		    
 	</header>
 
-	<main class="main-content">
+	<main class="main-content contact-form--main">
 		<div class="row">
 			<div class="col-xs-12 col-md-3">
 				<div class="infobox">
@@ -21,6 +21,7 @@
 			</div>		
 			<div class="col-xs-12 col-md-3">			
 			</div>		
-		</div>
+		</div>	
 	</main>
+	<?php include (get_template_directory() . '/components/contact-form.php'); ?>		
 <?php get_footer(); ?>

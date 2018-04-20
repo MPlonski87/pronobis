@@ -1,20 +1,42 @@
 .main-navigation {
   background-color: $white;
 
+  @include max-sm-breakpoint {
+    padding-top: rem(10);
+  }
+
   &__logo {
-    margin-left: $margin-side;
+    @include min-lg-breakpoint {
+      margin-left: $margin-side;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__links {
-    margin-right: $margin-side;
     text-align: right;
+
+    @include min-lg-breakpoint {
+      margin-right: $margin-side;
+    }
 
     & a {
       color: transparent;
     }
 
     & a:first-child {
-      margin-right: rem(20);
+      @include min-sm-breakpoint {
+        margin-right: rem(20);
+      }
+    }
+
+    img {
+      @include max-md-breakpoint {
+        height: 30%;
+        width: 30%;
+      }
     }
   }
 }

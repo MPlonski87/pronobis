@@ -1,0 +1,57 @@
+.contact-form {
+  h3 {
+    margin-left: rem(10);
+  }
+
+  input {
+    margin: rem(10) rem(10);
+    margin-left: 0;
+  }
+
+  input[type="submit"] {
+    background-color: $primary;
+    border: rem(1) $primary solid;
+    color: $white;
+    padding: rem(5) rem(20);
+    margin-top: rem(10);
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+
+    &:first-child {
+      margin-top: rem(50);
+      margin-bottom: rem(75);
+    }
+  }
+
+  input[type="number"] {
+    margin-right: 0;
+  }
+
+  input[type="tel"],
+  input[type="text"] {
+    width: rem(235);
+  }
+
+  p {
+    margin: rem(25) rem(10);
+  } // contact-form 7 overrides
+  .wpcf7-form-control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--main {
+    display: none;
+
+    @include min-lg-breakpoint() {
+      display: none;
+    }
+  }
+
+  .col {
+    display: inline-block;
+  }
+}

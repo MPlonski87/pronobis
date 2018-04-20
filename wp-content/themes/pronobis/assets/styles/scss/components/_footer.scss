@@ -1,20 +1,47 @@
 .footer {
   background-color: $secondary;
+  padding-bottom: rem(20);
 
   &__contact {
-    font-size: rem(48);
+    font-size: rem(32);
+    margin: rem(20) rem(10);
     position: relative;
-    text-align: right;
-    top: rem(-10);
+    text-align: left;
+
+    @include min-lg-breakpoint {
+      font-size: rem(42);
+      margin: rem(20) 0;
+      text-align: right;
+      top: rem(-10);
+    }
+
+    @include min-xl-breakpoint {
+      font-size: rem(48);
+    }
   }
 
   &__note {
-    font-size: rem(19);
+    font-size: rem(14);
+    margin-left: rem(10);
+
+    @include min-sm-breakpoint {
+      font-size: rem(16);
+    }
+
+    @include min-lg-breakpoint {
+      font-size: rem(19);
+    }
   }
 
   &__link {
     color: $primary;
-    font-size: rem(19);
+    font-size: rem(16);
     font-weight: 400;
+    margin-left: rem(10);
+    text-align: center !important;
+
+    @include min-lg-breakpoint {
+      font-size: rem(19);
+    }
   }
 }

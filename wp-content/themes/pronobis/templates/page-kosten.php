@@ -1,8 +1,11 @@
 <?php /* Template Name: kosten */ ?>
 <?php get_header(); ?>
-	    <div class="hero-image animated fadeIn">
+	    <div class="hero-image hero-image--sm animated fadeIn">
 	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/kosten/hero-kosten.jpg'; ?>" alt="Vorschaubild Kosten">
 	    </div>
+	    <div class="hero-image hero-image--xs animated fadeIn">
+	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/kosten/hero-kosten_mobile.jpg'; ?>" alt="Vorschaubild Kosten">
+	    </div>	    
 		<?php include (get_template_directory() . '/components/site-navigation.php'); ?>		    
 	</header>
 

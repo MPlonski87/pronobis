@@ -3,3 +3,58 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// breakpoints
+// 1675px
+@mixin min-xl-breakpoint {
+  @media only screen and (min-width: 104.6875em) {
+    @content;
+  }
+}
+
+// 1500px
+@mixin min-lg-2-breakpoint {
+  @media only screen and (min-width: 93.75em) {
+    @content;
+  }
+}
+
+// 1024px
+@mixin min-lg-breakpoint {
+  @media only screen and (min-width: 64em) {
+    @content;
+  }
+}
+
+// 1024px
+@mixin max-lg-breakpoint {
+  @media only screen and (max-width: 64em) {
+    @content;
+  }
+}
+
+// 768px
+@mixin min-md-breakpoint {
+  @media only screen and (min-width: 48em) {
+    @content;
+  }
+}
+
+@mixin max-md-breakpoint {
+  @media only screen and (max-width: 48em) {
+    @content;
+  }
+}
+
+// 425px
+@mixin min-sm-breakpoint {
+  @media only screen and (min-width: 26.5625em) {
+    @content;
+  }
+}
+
+@mixin max-sm-breakpoint {
+  @media only screen and (max-width: 26.5625em) {
+    @content;
+  }
+}

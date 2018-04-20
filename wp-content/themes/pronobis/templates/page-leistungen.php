@@ -1,8 +1,11 @@
 <?php /* Template Name: leistungen */ ?>
 <?php get_header(); ?>
-	    <div class="hero-image animated fadeIn">
+	    <div class="hero-image hero-image--sm animated fadeIn">
 	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/leistungen/hero-leistungen.jpg'; ?>" alt="Vorschaubild Leistungen">
 	    </div>
+	    <div class="hero-image hero-image--xs animated fadeIn">
+	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/leistungen/hero-leistungen_mobile.jpg'; ?>" alt="Vorschaubild Leistungen">
+	    </div>	    
 		<?php include (get_template_directory() . '/components/site-navigation.php'); ?>		    
 	</header>
 

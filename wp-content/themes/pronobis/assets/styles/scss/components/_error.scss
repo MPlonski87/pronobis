@@ -1,8 +1,16 @@
 .error {
   &__note {
-    border: rem(1) $primary solid;
+    border: rem(3) $primary solid;
     margin: $margin-side;
-    padding: rem(50);
+    padding: rem(10);
+
+    @include min-sm-breakpoint {
+      padding: rem(20);
+    }
+
+    @include min-md-breakpoint {
+      padding: rem(50);
+    }
 
     a {
       color: $primary;

@@ -1,8 +1,11 @@
 <?php /* Template Name: qualifikation */ ?>
 <?php get_header(); ?>
-	    <div class="hero-image animated fadeIn">
+	    <div class="hero-image hero-image--sm animated fadeIn">
 	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/qualifikation/hero-qualifikation.jpg'; ?>" alt="Vorschaubild Qualifikation">
 	    </div>
+	    <div class="hero-image hero-image--xs animated fadeIn">
+	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/qualifikation/hero-qualifikation_mobile.jpg'; ?>" alt="Vorschaubild Qualifikation">
+	    </div>	    
 		<?php include (get_template_directory() . '/components/site-navigation.php'); ?>
 	</header>
 
