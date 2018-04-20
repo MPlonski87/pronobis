@@ -13,19 +13,16 @@
       li {
         background-color: $secondary-dark;
         border-bottom: rem(3) $white solid;
-
         @include min-lg-breakpoint {
           border: rem(3) $white solid;
         }
-
         list-style-type: none;
         padding-bottom: rem(10);
         padding-top: rem(10);
         text-align: center;
-        flex-basis: 25%;
-
         @include min-lg-breakpoint {
           max-width: 25%;
+          width: 25%;
         }
 
         a {

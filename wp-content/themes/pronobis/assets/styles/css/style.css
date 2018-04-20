@@ -165,14 +165,14 @@ ul li {
     list-style-type: none;
     padding-bottom: 0.625rem;
     padding-top: 0.625rem;
-    text-align: center;
-    flex-basis: 25%; }
+    text-align: center; }
     @media only screen and (min-width: 64em) {
       .site-navigation div ul li {
         border: 0.1875rem #fff solid; } }
     @media only screen and (min-width: 64em) {
       .site-navigation div ul li {
-        max-width: 25%; } }
+        max-width: 25%;
+        width: 25%; } }
     .site-navigation div ul li a {
       position: relative;
       color: #fff;
@@ -250,6 +250,7 @@ ul li {
         display: block; } }
 
 .main-content {
+  display: block;
   margin-top: 6.25rem;
   margin-bottom: 0; }
   @media only screen and (min-width: 64em) {
@@ -379,6 +380,9 @@ ul li {
 .contact-form .wpcf7-form-control {
   display: flex;
   flex-direction: column; }
+
+.contact-form .wpcf7-list-item {
+  margin-left: 0; }
 
 .contact-form--main {
   display: none; }
