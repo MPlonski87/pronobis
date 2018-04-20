@@ -23,7 +23,6 @@
 		<meta name="audience" content="Erwachsene"><meta http-equiv="content-language" content="de">
 		<meta name="robots" content="index, follow">		
 		<title>Pronobis Demenzbetreuung | Dorothee Hammer</title>
-		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() . '/favicon.ico'; ?>" type="image/x-icon" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() . '/favicon.ico';?>" type="image/x-icon" />	
 		<?php wp_head(); ?>

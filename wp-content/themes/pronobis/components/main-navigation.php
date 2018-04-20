@@ -1,7 +1,7 @@
 <div class="main-navigation">
 	<div class="row middle-xs">
 		<div class="col-xs-6 col-lg-3">
-			<a class="main-navigation__logo" href="/pronobis/">
+			<a class="main-navigation__logo" href="http://www.pronobis.nrw">
 				<img src="<?php echo get_template_directory_uri() . 
 					'/assets/images/main-navigation/logo.png'; ?>" alt="Pronobis Demenzbetreuung Logo">
 			</a>
