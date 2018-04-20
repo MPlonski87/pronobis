@@ -6,7 +6,7 @@ A wordpress theme developed as a project for my bachelor thesis in computer scie
 ## Features
 - animate.css, flexboxgrid.css, normalize.css
 - watch project including livereload with browsersynch and sass to css compiling via gulp
-- build project with minification, concatenation, uglyification, ...
+- build project with minification, concatenation, prefixing, ...
 
 ## Requirements
 - Node.js (https://nodejs.org/) including npm (https://www.npmjs.com/)
@@ -19,4 +19,4 @@ A wordpress theme developed as a project for my bachelor thesis in computer scie
 </pre>
 
 ## Note
-Don't forget to edit localhost path in gulpfile.js and to set wordpress database configuration properly
+Don't forget to edit localhost path in gulpfile.js, set wordpress database configuration properly and regenerate permalinks.
