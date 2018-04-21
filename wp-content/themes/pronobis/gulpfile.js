@@ -77,14 +77,14 @@ gulp.task('redirect-vendor', function() {
     .pipe(gulp.dest('vendor'));
 });
 
-// watch
-gulp.task('watch', ['build', 'browserSync'], function() {
-  gulp.watch('assets/styles/scss/**/*.scss', ['sass']);
-  gulp.watch('*.*', browserSync.reload);
-  gulp.watch('./templates/*.*', browserSync.reload);
-});
-
 // build
 gulp.task('build', function(done) {
   runSequence('clean', 'redirect-vendor', 'sass', 'autoprefix-css', 'concatCSS', 'cleanCSS', function() {});
+});
+
+// watch
+gulp.task('watch', ['build', 'browserSync'], function() {
+  gulp.watch('assets/styles/scss/**/*.scss', ['build']);
+  gulp.watch('*.*', browserSync.reload);
+  gulp.watch('./templates/*.*', browserSync.reload);
 });

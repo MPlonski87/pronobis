@@ -20,7 +20,7 @@
 		<meta name="description" content="Pronobis Demenzbetreuung Dorothee Hammer">
 		<meta name="keywords" content="Pronobis, Demenzbetreuung, Dorothee, Hammer">
 		<meta name="page-topic" content="Dienstleistung">
-		<meta name="audience" content="Erwachsene"><meta http-equiv="content-language" content="de">
+		<meta name="audience" content="Erwachsene">
 		<meta name="robots" content="index, follow">		
 		<title>Pronobis Demenzbetreuung | Dorothee Hammer</title>
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() . '/favicon.ico'; ?>" type="image/x-icon" />
