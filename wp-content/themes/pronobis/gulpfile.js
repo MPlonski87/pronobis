@@ -5,6 +5,7 @@ var del = require('del');
 var autoprefixer = require('gulp-autoprefixer');
 var concatCss = require('gulp-concat-css');
 var cleanCSS = require('gulp-clean-css');
+var runSequence = require('run-sequence');
 
 // move node_modules files
 var filesToMove = [
@@ -22,7 +23,7 @@ gulp.task('clean', function() {
 gulp.task('sass', function() {
   return gulp.src('assets/styles/scss/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('assets/styles/css/'))
+    .pipe(gulp.dest('dist/assets/styles/css/'))
     .pipe(browserSync.reload({
       stream: true
     }))
@@ -30,30 +31,30 @@ gulp.task('sass', function() {
 
 // autoprefix css
 gulp.task('autoprefix-css', () => {
-  gulp.src('assets/styles/css/*.css')
+  gulp.src('dist/assets/styles/css/*.css')
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest('assets/styles/css/'))
+    .pipe(gulp.dest('dist/assets/styles/css/'))
 });
 
 // minify css
 gulp.task('cleanCSS', () => {
-  return gulp.src('assets/styles/css/*.css')
+  return gulp.src('dist/assets/styles/css/*.css')
     .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(gulp.dest('assets/styles/css/'));
+    .pipe(gulp.dest('dist/assets/styles/css/'));
 });
 
 // concat css
 gulp.task('concatCSS', function() {
   return gulp.src([
-      'assets/styles/css/*.css',
-      'node_modules/normalize.css/normalize.css',
-      'node_modules/flexboxgrid/dist/flexboxgrid.min.css',
-      'node_modules/animate.css/animate.min.css'
+      'vendor/node_modules/normalize.css/normalize.css',
+      'vendor/node_modules/flexboxgrid/dist/flexboxgrid.min.css',
+      'vendor/node_modules/animate.css/animate.min.css',
+      'dist/assets/styles/css/*.css'
     ])
-    .pipe(concatCss("assets/styles/css/style.css"))
+    .pipe(concatCss("dist/assets/styles/css/style.css"))
     .pipe(gulp.dest(''));
 });
 
@@ -65,10 +66,10 @@ gulp.task('browserSync', function() {
 });
 
 // redirect compiled css
-gulp.task('redirect-css', function() {
+/*gulp.task('redirect-css', function() {
   gulp.src('assets/styles/css/*.css')
     .pipe(gulp.dest('dist/assets/styles/css/'));
-});
+});*/
 
 // redirect vendor
 gulp.task('redirect-vendor', function() {
@@ -76,19 +77,14 @@ gulp.task('redirect-vendor', function() {
     .pipe(gulp.dest('vendor'));
 });
 
-// compile
-gulp.task('compile', ['clean', 'redirect-vendor', 'sass', 'autoprefix-css', 'concatCSS', 'cleanCSS', 'redirect-css'], function() {
-  gulp.watch('assets/styles/scss/**/*.scss', ['sass']);
-  gulp.watch('*.*', browserSync.reload);
-  gulp.watch('./templates/*.*', browserSync.reload);
-});
-
 // watch
-gulp.task('watch', ['compile', 'browserSync'], function() {
+gulp.task('watch', ['build', 'browserSync'], function() {
   gulp.watch('assets/styles/scss/**/*.scss', ['sass']);
   gulp.watch('*.*', browserSync.reload);
   gulp.watch('./templates/*.*', browserSync.reload);
 });
 
 // build
-gulp.task('build', ['clean', 'redirect-vendor', 'sass', 'redirect-css', ], function() {});
+gulp.task('build', function(done) {
+  runSequence('clean', 'redirect-vendor', 'sass', 'autoprefix-css', 'concatCSS', 'cleanCSS', function() {});
+});
