@@ -56,7 +56,11 @@
     margin-bottom: rem(30);
 
     @include min-lg-breakpoint {
-      margin-bottom: rem(0);
+      margin-bottom: rem(2);
+    }
+
+    @include min-lg-2-breakpoint {
+      margin-bottom: rem(15);
     }
   }
 }
