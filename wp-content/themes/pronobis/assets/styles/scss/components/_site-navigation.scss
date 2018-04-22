@@ -17,8 +17,6 @@
           border: rem(3) $white solid;
         }
         list-style-type: none;
-        padding-bottom: rem(10);
-        padding-top: rem(10);
         text-align: center;
         @include min-lg-breakpoint {
           max-width: 25%;
@@ -28,7 +26,10 @@
         a {
           position: relative;
           color: $white;
+          display: block;
           font-size: rem(24);
+          padding-bottom: rem(10);
+          padding-top: rem(10);
 
           @include min-md-breakpoint {
             font-size: rem(30);
