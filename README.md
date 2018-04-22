@@ -5,7 +5,7 @@ A wordpress theme developed as a project for my bachelor thesis in computer scie
 
 ## Features
 - animate.css, flexboxgrid.css, normalize.css
-- watch project including livereload with browsersynch and sass to css compiling via gulp
+- watch project including livereload with browsersynch and sass to compile css via gulp
 - build project with minification, concatenation, prefixing, ...
 
 ## Requirements
