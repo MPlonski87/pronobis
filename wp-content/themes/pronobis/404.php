@@ -15,5 +15,5 @@
       </div>                                            
     </div>
 	</main>
-
+<?php include (get_template_directory() . '/components/scroll-to-top.php'); ?>  
 <?php get_footer(); ?>

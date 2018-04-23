@@ -9,4 +9,5 @@
 	</header>
 
 	<?php include (get_template_directory() . '/components/main-content.php'); ?>
+	<?php include (get_template_directory() . '/components/scroll-to-top.php'); ?>		
 <?php get_footer(); ?>
