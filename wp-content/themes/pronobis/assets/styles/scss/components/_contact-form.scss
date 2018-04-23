@@ -59,3 +59,13 @@
     display: inline-block;
   }
 }
+
+// contact form 7 override
+.wpcf7-form-control-wrap div>div {
+  margin-left: rem(5);
+}
+
+.wpcf7-response-output {
+  padding: rem(10) !important;
+  font-size: rem(18) !important;
+}
