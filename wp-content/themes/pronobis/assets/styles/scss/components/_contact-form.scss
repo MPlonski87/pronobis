@@ -32,7 +32,7 @@
 
   input[type="tel"],
   input[type="text"] {
-    width: rem(235);
+    width: rem(297);
   }
 
   p {
@@ -45,6 +45,10 @@
 
   .wpcf7-list-item {
     margin-left: 0;
+  }
+
+  .wpcf7-select {
+    min-width: rem(300);
   }
 
   &--main {
