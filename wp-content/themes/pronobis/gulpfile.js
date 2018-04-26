@@ -6,6 +6,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var concatCss = require('gulp-concat-css');
 var cleanCSS = require('gulp-clean-css');
 var runSequence = require('run-sequence');
+var uglifycss = require('gulp-uglifycss');
 
 // move node_modules files
 var filesToMove = [
@@ -58,6 +59,16 @@ gulp.task('concatCSS', function() {
     .pipe(gulp.dest(''));
 });
 
+// uglify css
+gulp.task('uglifyCSS', function() {
+  gulp.src('dist/assets/styles/css/style.css')
+    .pipe(uglifycss({
+      "maxLineLen": 80,
+      "uglyComments": true
+    }))
+    .pipe(gulp.dest('dist/assets/styles/css/'));
+});
+
 // browsersync
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -79,7 +90,7 @@ gulp.task('redirect-vendor', function() {
 
 // build
 gulp.task('build', function(done) {
-  runSequence('clean', 'redirect-vendor', 'sass', 'autoprefix-css', 'concatCSS', 'cleanCSS', function() {});
+  runSequence('clean', 'redirect-vendor', 'sass', 'autoprefix-css', 'concatCSS', 'uglifyCSS', 'cleanCSS', function() {});
 });
 
 // watch
