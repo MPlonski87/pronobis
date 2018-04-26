@@ -1,10 +1,10 @@
 # Pronobis Demenzbetreuung Wordpress Theme
 
-![alt text](http://www.pronobis.nrw/wp-content/themes/pronobis/screenshot.png)[http://wwww.pronobis.nrw](http://pronobis.nrw)
+![alt text](http://www.pronobis.nrw/wp-content/themes/pronobis/screenshot.png)
 
 
 ## Description
-A wordpress theme developed as a project for my bachelor thesis in computer sciences.
+A wordpress theme developed as a project for my bachelor thesis in computer sciences. Goto the deployed website: [http://wwww.pronobis.nrw](http://pronobis.nrw)
 
 ## Features
 - animate.css, flexboxgrid.css, normalize.css
