@@ -4,7 +4,7 @@
 
 
 ## Description
-A wordpress theme developed as a project for my bachelor thesis in computer sciences. Goto the deployed website: [http://wwww.pronobis.nrw](http://pronobis.nrw)
+A wordpress theme developed as a project for my bachelor thesis in computer sciences. Goto the deployed website: [http://www.pronobis.nrw](http://pronobis.nrw)
 
 ## Features
 - animate.css, flexboxgrid.css, normalize.css
