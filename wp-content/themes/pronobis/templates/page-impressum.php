@@ -1,7 +1,14 @@
 <?php /* Template Name: impressum */ ?>
 <?php get_header(); ?>
-	    <div class="hero-image animated fadeIn">
-	        <img src="<?php echo get_template_directory_uri() . '/assets/images/hero-image/impressum/hero-impressum.jpg'; ?>" alt="Vorschaubild Impressum">
+	    <div class="hero-image hero-image--sm animated fadeIn">
+				<?php if (get_field('hero-image-lg')): ?>
+					<img src="<?php the_field('hero-image-lg'); ?>" />
+				<?php endif; ?>        
+	    </div>
+	    <div class="hero-image hero-image--xs animated fadeIn">
+				<?php if (get_field('hero-image-xs')): ?>
+					<img src="<?php the_field('hero-image-xs'); ?>" />
+				<?php endif; ?>  
 	    </div>
 		<?php include (get_template_directory() . '/components/site-navigation.php'); ?>		    
 	</header>
