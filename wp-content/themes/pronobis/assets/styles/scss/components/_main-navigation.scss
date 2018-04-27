@@ -1,5 +1,8 @@
 .main-navigation {
   background-color: $white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 
   @include max-sm-breakpoint {
     padding-top: rem(10);
