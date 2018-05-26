@@ -2,6 +2,7 @@ jQuery(document).ready(function() {
   var btn = jQuery('.back-to-top');
 
   btn.on('click', function(e) {
+    btn.css('opacity', '0.7');
     jQuery('html, body').animate({
       scrollTop: 0
     }, 500);
