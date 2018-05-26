@@ -9,7 +9,7 @@
     text-align: left;
 
     @include min-lg-breakpoint {
-      font-size: rem(42);
+      font-size: rem(32);
       margin: rem(20) 0;
       text-align: right;
       top: rem(-10);
@@ -29,7 +29,7 @@
     }
 
     @include min-lg-breakpoint {
-      font-size: rem(19);
+      font-size: rem(16);
     }
   }
 
