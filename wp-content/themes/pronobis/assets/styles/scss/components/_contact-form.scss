@@ -52,10 +52,10 @@
   }
 
   &--main {
-    display: none;
+    margin-bottom: 0;
 
-    @include min-lg-breakpoint() {
-      display: none;
+    .row {
+      height: 0;
     }
   }
 
