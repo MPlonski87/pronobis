@@ -6,6 +6,7 @@
 				<div class="col-xs-12 col-md-7">
 					<p class="footer__note">pronobis Demenzbetreuung Dorothee Hammer ist ein von der Bezirksregierung Düsseldorf anerkanntes ambulantes Betreuungsangebot für Seniorinnen und Senioren mit und ohne eingeschränkter Alltagskompetenz.</p>
 					<a class="footer__link" href="/pronobis/impressum/">IMPRESSUM</a>
+					<a class="footer__link" href="/pronobis/datenschutz/">DATENSCHUTZ</a>
 				</div>
 			</div>
 		</footer>
