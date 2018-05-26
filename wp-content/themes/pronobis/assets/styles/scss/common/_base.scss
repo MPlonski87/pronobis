@@ -132,6 +132,15 @@ p {
 }
 
 ul {
+  @include min-lg-breakpoint {
+    margin-top: rem(23);
+    margin-bottom: 0;
+  }
+
+  @include min-lg-2-breakpoint {
+    margin-top: rem(30);
+  }  
+
   li {
     color: $black;
     font-size: rem(14);
