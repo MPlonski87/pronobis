@@ -90,7 +90,9 @@ gulp.task('redirect-vendor', function() {
 
 // build
 gulp.task('build', function(done) {
-  runSequence('clean', 'redirect-vendor', 'sass', 'autoprefix-css', 'concatCSS', 'uglifyCSS', 'cleanCSS', function() {});
+  runSequence('clean', 'redirect-vendor', 'sass', 
+    'autoprefix-css', 'concatCSS', 'uglifyCSS', 
+    'cleanCSS', function() {});
 });
 
 // watch
