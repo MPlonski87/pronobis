@@ -17,7 +17,7 @@
 		<meta name="author" content="Dorothee Hammer">
 		<meta name="publisher" content="Michael Plonski">
 		<meta name="copyright" content="Michael Plonski und Norbert Hammer">
-		<meta name="description" content="Pronobis Demenzbetreuung Dorothee Hammer">
+		<meta name="description" content="Pronobis Demenzbetreuung Dorothee Hammer ist ein von der Bezirksregierung Düsseldorf anerkanntes ambulantes Betreuungsangebot für Seniorinnen und Senioren mit und ohne eingeschränkter Alltagskompetenz.">
 		<meta name="keywords" content="Pronobis, Demenzbetreuung, Dorothee, Hammer">
 		<meta name="page-topic" content="Dienstleistung">
 		<meta name="audience" content="Erwachsene">
@@ -26,7 +26,7 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://www.pronobis.nrw/" />
 		<meta property="og:image" content="<?php echo get_stylesheet_directory_uri() . '/screenshot.png'; ?>"/>			
-		<title>Pronobis Demenzbetreuung | Dorothee Hammer</title>
+		<title><?php echo get_bloginfo('name'); ?> | <?php $page_title = $wp_query->post->post_title; echo $page_title; ?></title>
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() . '/favicon.ico'; ?>" type="image/x-icon" />
 		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() . '/favicon.ico';?>" type="image/x-icon" />	
 		<?php wp_head(); ?>
