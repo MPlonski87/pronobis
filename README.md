@@ -4,15 +4,20 @@
 
 
 ## Description
-A wordpress theme developed as a project for my bachelor thesis in computer sciences. Goto the deployed website: [http://www.pronobis.nrw](http://pronobis.nrw)
+A wordpress theme developed as a project for my bachelor thesis in computer sciences. Go to the deployed website: [http://www.pronobis.nrw](http://pronobis.nrw)
 
 ## Features
-- animate.css, flexboxgrid.css, normalize.css
-- watch project including livereload with browsersynch and sass to compile css via gulp
-- build project with minification, concatenation, prefixing, ...
+- watch project including livereload with browsersynch and compile sass to css to via gulp
+- build project with minification, concatenation, prefixing, uglifying ...
 
 ## Requirements
 - Node.js (https://nodejs.org/) including npm (https://www.npmjs.com/)
+
+## Vendor
+- animate.css
+- normalize.css
+- flexboxgrid.css
+- jQuery
 
 ## Quick Start
 <pre>
