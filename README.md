@@ -4,7 +4,7 @@
 
 
 ## Description
-A wordpress theme developed as a project for my bachelor thesis in computer sciences. Go to the deployed website: [http://www.pronobis.nrw](http://pronobis.nrw)
+A wordpress theme developed as a project for my bachelor thesis in computer sciences. Go to the deployed website: [https://www.pronobis.nrw](https://pronobis.nrw)
 
 ## Features
 - watch project including livereload with browsersynch and compile sass to css to via gulp
